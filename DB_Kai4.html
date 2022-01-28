@@ -1,0 +1,126 @@
+<DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Alystongo</title>
+	
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$("#bt1").click(function (){
+				$("#br").slideToggle();
+				$("#in").hide();
+				$("#jp").hide();
+			});
+			
+			$("#bt2").click(function (){
+				$("#in").slideToggle();
+				$("#br").hide();
+				$("#jp").hide();
+			});
+			
+			$("#bt3").click(function (){
+				$("#jp").slideToggle();
+				$("#in").hide();
+				$("#br").hide();
+			});
+		});
+	</script>
+	
+	<style type="text/css">
+		#in, #jp{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			display: none;
+		}
+		#br{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		button{
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: white;
+			background-color: black;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+			
+			
+			font-family: "Monospace", Courier New;
+		}
+		
+		#one, #two, #three{
+			text-align: center;
+			padding-top: 20px;
+		}
+		
+		h1{
+			font-family: "Monospace", Courier New;
+			font-size: 20px;
+			text-align: center;
+			color: white;
+			text-shadow: 5px 5px 8px black;
+			
+			
+		}
+		body{
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDidim0wY2evuUFYkLhSNgvt4HdJPcNHFBw&usqp=CAU");
+		}
+	</style>
+</head>
+
+<body>
+
+<h1>Dragon Ball Kai Opening</h1>
+
+<div id="one" ><a href="DB_Kai.html" ><button id="bt1">Português</button>
+	<div id="br">
+		<video width="320" height="240" controls>
+		
+			<source src="Port.mp4" type="video/mp4">
+			<source src="Port.ogg" type="video/ogg">
+
+		</video>
+	</div>
+</div>
+
+<div id="two" ><a href="DB_Kai2.html" ><button id="bt2">Inglês</button></a>
+	<div id="in">
+		<video width="320" height="240" controls>
+		
+			<source src="Ing.mp4" type="video/mp4">
+			<source src="Ing.ogg" type="video/ogg">
+
+		</video>
+	</div>
+</div>
+
+<div id="three" ><a href="DB_Kai3.html" ><button id="bt3">Japones</button></a>
+	<div id="jp">
+		<video width="320" height="240" controls>
+		
+			<source src="Japan.mp4" type="video/mp4">
+			<source src="Japan.ogg" type="video/ogg">
+
+		</video>
+	</div>
+</div>
+
+
+</body>
+
+</html>
+
